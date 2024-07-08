@@ -70,6 +70,8 @@ public class SysMessageTemplateController extends JeecgController<SysMessageTemp
         return Result.ok(pageList);
 	}
 
+	//11111111111111111111111111111111111111111
+	//创建分支2
 	@GetMapping(value = "/list111111")
 	public Result<?> list(SysMessageTemplate sysMessageTemplate,
 						  @RequestParam(name = "pageNo", defaultValue = "1") Integer pageNo,
