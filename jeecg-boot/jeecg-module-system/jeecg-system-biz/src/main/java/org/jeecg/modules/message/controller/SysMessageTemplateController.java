@@ -70,6 +70,17 @@ public class SysMessageTemplateController extends JeecgController<SysMessageTemp
         return Result.ok(pageList);
 	}
 
+	@GetMapping(value = "/list111111")
+	public Result<?> list(SysMessageTemplate sysMessageTemplate,
+						  @RequestParam(name = "pageNo", defaultValue = "1") Integer pageNo,
+						  @RequestParam(name = "pageSize", defaultValue = "10") Integer pageSize,
+						  HttpServletRequest request){
+		QueryWrapper<SysMessageTemplate> queryWrapper = QueryGenerator.initQueryWrapper(sysMessageTemplate,request.getParameterMap());
+		Page<SysMessageTemplate> page = new Page<>(pageNo,pageSize);
+		IPage<SysMessageTemplate> pageList = sysMessageTemplateService.page(page,queryWrapper);
+		return Result.ok(pageList);
+	}
+
 	/**
 	 * 添加
 	 * 
