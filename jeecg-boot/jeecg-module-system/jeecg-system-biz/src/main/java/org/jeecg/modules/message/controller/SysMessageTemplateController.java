@@ -70,13 +70,10 @@ public class SysMessageTemplateController extends JeecgController<SysMessageTemp
         return Result.ok(pageList);
 	}
 
-<<<<<<< HEAD
 	//分支1----------------------------------------------------------
-=======
+
 	//11111111111111111111111111111111111111111
-	//创建分支2
->>>>>>> branch2
-	//创建分支3---
+	//创建本地分支3----------------------------------------
 	@GetMapping(value = "/list111111")
 	public Result<?> list(SysMessageTemplate sysMessageTemplate,
 						  @RequestParam(name = "pageNo", defaultValue = "1") Integer pageNo,
