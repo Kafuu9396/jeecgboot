@@ -71,8 +71,8 @@ public class SysMessageTemplateController extends JeecgController<SysMessageTemp
 	}
 
 	//分支1----------------------------------------------------------
-
-	//11111111111111111111111111111111111111111
+	//2222222222222222222222222222222222222222
+	//+++++++++++++++++++++++++++++++++++++++
 	//创建本地分支3----------------------------------------
 	@GetMapping(value = "/list111111")
 	public Result<?> list(SysMessageTemplate sysMessageTemplate,
